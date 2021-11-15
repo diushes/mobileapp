@@ -29,7 +29,7 @@ class TitleAndPrice extends StatelessWidget {
             ))
           ],)),
           Spacer(),
-          Text("\$price",
+          Text("\$$price",
             style: Theme.of(context).textTheme.headline5!.copyWith(color: kPrimaryColor),)
         ],
       ),

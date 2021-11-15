@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plantapp/constants.dart';
 import 'package:plantapp/details/components/title_and_price.dart';
 
+import 'bottom_buttons.dart';
 import 'icon_card.dart';
 import 'images_and_icons.dart';
 
@@ -23,34 +24,11 @@ class Body extends StatelessWidget {
             price: 440,
           ),
           SizedBox(height: kDefaultPadding,),
-          Row(
-            children: [
-              SizedBox(
-                width: size.width/2,
-                height: 84,
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topRight: Radius.circular(20))),
-                  color: kPrimaryColor,
-                  onPressed: (){},
-                  child: Text("Buy Now",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16
-                  ),
-                  ),),
-              ),
-              Expanded(child: FlatButton(
-                onPressed: (){},
-                child: Text("Description"),),)
-            ],
-          ),
+          detail_bottom_button(size: size),
           SizedBox(height: kDefaultPadding*2),
         ],
       ),
     );
   }
 }
-
-
-
 
