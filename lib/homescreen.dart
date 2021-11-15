@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:plantapp/constants.dart';
 import 'package:plantapp/screens_home/components/body.dart';
+import 'package:plantapp/screens_home/components/my_bottom_navbar.dart';
 
 class Homescreen extends StatelessWidget{
   @override
@@ -8,6 +11,7 @@ class Homescreen extends StatelessWidget{
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 
@@ -19,3 +23,4 @@ class Homescreen extends StatelessWidget{
   }
 
 }
+
