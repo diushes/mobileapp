@@ -1,8 +1,6 @@
-# webshop
+# PlantApp
 
 
-## Title of the project
-PlantShop
 
 
 # Description
